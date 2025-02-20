@@ -1,0 +1,13 @@
+CSV:
+Vārds; Uzvārds; Niegarības pakāpe
+Emīls; Olesens; 9001
+Vairis; Caune; 420
+
+JSON:
+{
+ [
+    "Vārds" : "Emīls",
+    "Uzvārds" : "Olesens"
+    "Niegarība pakāpe" : 9001
+ ]   
+}
