@@ -48,7 +48,6 @@ def get_university_count_by_country():
         country_count[country] = country_count.get(country, 0) + 1
     return country_count
 
-# Datu apstrāde
 latvia_universities = get_universities_by_country("Latvia")
 print(f"Latvijā ir {count_universities(latvia_universities)} augstskolas")
 print_university_names(latvia_universities)
@@ -62,7 +61,6 @@ print(f"Francijas augstskolām {percentage_eu}% ir mājas lapa ar .eu domēnu")
 paris_count = count_universities_with_name(france_universities, "Paris")
 print(f"Francijā {paris_count} augstskolu nosaukumā ir vārds 'Paris'")
 
-universities_worldwide = get_universities_by_country("World")  # Iepriekš tukša vērtība
 count_school = count_universities_with_name(universities_worldwide, "School")
 print(f"Pasaulē ir {count_school} augstskolas, kuru nosaukumā ir vārds 'School'")
 
