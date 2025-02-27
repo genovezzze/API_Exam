@@ -4,14 +4,14 @@ response = requests.get(url)
 
 countries = response.json()
 visi_valsti = len(countries)
-print(f"Informācija pieejama par {visi_valsti} valstīm.")
+print(f"Informācija pieejama par {visi_valsti} valstīm")
 un_member_countries = sum(1 for country in countries if 'unMember' in country and country['unMember'])
-print(f"Apvienoto Nāciju Organizācijā ir {un_member_countries} valstis.")
+print(f"Apvienoto Nāciju Organizācijā ir {un_member_countries} valstis")
 pirmdiena_sakums = sum(1 for country in countries if 'startOfWeek' in country and country['startOfWeek'] == 'monday')
 pirmdiena = (pirmdiena_sakums / visi_valsti) * 100
-print(f"{pirmdiena:.2f}% valstīs diena sākas ar pirmdienu.")
+print(f"{pirmdiena:.2f}% valstīs diena sākas ar pirmdienu")
 republika = sum(1 for country in countries if 'name' in country and 'common' in country['name'] and 'Republic' in country['name']['common'])
-print(f"Oficiālajos nosaukumos angļu valodā 'Republic' ir {republika} valstīs.")
+print(f"Oficiālajos nosaukumos angļu valodā Republic ir {republika} valstīs")
 
 koordinates = [57.801558744803096, 23.240355694350477]
 def distance(coord1, coord2):
@@ -35,7 +35,7 @@ for country in countries:
         if dist < min_distancija:
             min_distancija = dist
             tuvakais_valsts = country['name']['common']
-print(f"Valsts, kas atrodas vistuvāk norādītajiem koordinātēm, ir {tuvakais_valsts}.")
+print(f"Valsts, kas atrodas vistuvāk norādītajiem koordinātēm, ir {tuvakais_valsts}")
 
 eiropas_p = 0
 eiropas_v = [
@@ -51,5 +51,5 @@ for country in countries:
         if country['name']['common'] in eiropas_v:
             if 'population' in country:
                 eiropas_p += country['population']
-print(f"Kopējais iedzivotāju skaits Eiropas sauszemes robežas valstīs ir {eiropas_p}.")
+print(f"Kopējais iedzivotāju skaits Eiropas sauszemes robežas valstīs ir {eiropas_p}")
 
