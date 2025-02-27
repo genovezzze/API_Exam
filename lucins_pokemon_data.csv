@@ -1,0 +1,16 @@
+Name,Type,HP,Attack,Defense,Speed
+Bulbasaur,"Grass, Poison",45,49,49,45
+Ivysaur,"Grass, Poison",60,62,63,60
+Venusaur,"Grass, Poison",80,82,83,80
+Charmander,Fire,39,52,43,65
+Charmeleon,Fire,58,64,58,80
+Charizard,"Fire, Flying",78,84,78,100
+Squirtle,Water,44,48,65,43
+Wartortle,Water,59,63,80,58
+Blastoise,Water,79,83,100,78
+Caterpie,Bug,45,30,35,45
+Metapod,Bug,50,20,55,30
+Butterfree,"Bug, Flying",60,45,50,70
+Pidgey,"Normal, Flying",40,45,40,56
+Pidgeotto,"Normal, Flying",63,60,55,71
+Pidgeot,"Normal, Flying",83,80,75,101
