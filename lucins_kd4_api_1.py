@@ -23,4 +23,4 @@ if 'Defense' in data.columns:
     print(f"Visaugstākais aizsardzības rādītājs ir Pokémonam {defense['Name']} ar aizsardzības rādītāju {defense['Defense']}.")
 if 'Type 2' in data.columns:
     vairaktipi = data[data['Type 2'].notna()].shape[0]
-    print(f"Pokemoni, kuriem ir vairāk nekā viens tips: {vairaktipi}.")
+    print(f"Pokemoni, kuriem ir vairāk nekā viens tips: {vairaktipi}")
